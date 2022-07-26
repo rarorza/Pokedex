@@ -39,12 +39,36 @@ main {
   color: #3a444d;
   top: 31.5%;
   left: 61%;
-  font-size: clamp(8px, 3.7vw, 25px)
+  font-size: clamp(8px, 3.7vw, 25px);
 }
 
 .pokemon_name {
   color: #3a444d;
   text-transform: capitalize;
+}
+
+.pokemon_type {
+  position: absolute;
+  font-weight: 400;
+  color: #3a444d;
+  top: 36.5%;
+  left: 61%;
+  font-size: clamp(8px, 3.38vw, 25px);
+}
+
+.pokemon_element {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.pokemon_status {
+  position: absolute;
+  text-align: left;
+  font-weight: 400;
+  color: #3a444d;
+  top: 41.5%;
+  left: 61%;
+  font-size: clamp(8px, 3.38vw, 25px);
 }
 
 .form {
@@ -105,5 +129,9 @@ main {
 
   .button:active {
     font-size: 0.8rem;
+  }
+
+  .pokemon_type, .pokemon_status {
+    font-size: 0.7rem;
   }
 }
