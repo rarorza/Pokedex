@@ -23,7 +23,6 @@ main {
 .pokedex {
   width: 100%;
   max-width: 850px;
-  /*faz com que o tamanho da imagem da pokedex não deseja afetado por novos elementos inseridos na tag 'main' */
 }
 
 .pokemon_img {
@@ -102,5 +101,9 @@ main {
   .buttons {
     left: 78.1%;
     bottom: 18.9%;
+  }
+
+  .button:active {
+    font-size: 0.8rem;
   }
 }
