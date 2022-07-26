@@ -34,21 +34,12 @@ const renderPokemon = async (pokemon) => {
     pokemonName.innerHTML = data['name'];
     pokemonNumber.innerHTML = data['id'];
     pokemonImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-    if (pokemonElement.innerHTML = '') {
-      pokemonElement.innerHTML = data['types']['0']['type']['name'];
-      pokemonHp.innerHTML = data['stats']['0']['base_stat'];
-      pokemonAtack.innerHTML = data['stats']['1']['base_stat'];
-      pokemonDefence.innerHTML = data['stats']['2']['base_stat'];
-      input.value = '';
-      searchPokemon = data.id;
-    } else {
-      pokemonElement.innerHTML = [data['types']['0']['type']['name'], data['types']['1']['type']['name']];
-      pokemonHp.innerHTML = data['stats']['0']['base_stat'];
-      pokemonAtack.innerHTML = data['stats']['1']['base_stat'];
-      pokemonDefence.innerHTML = data['stats']['2']['base_stat'];
-      input.value = '';
-      searchPokemon = data.id;
-    }
+    pokemonElement.innerHTML = data['types']['0']['type']['name'];
+    pokemonHp.innerHTML = data['stats']['0']['base_stat'];
+    pokemonAtack.innerHTML = data['stats']['1']['base_stat'];
+    pokemonDefence.innerHTML = data['stats']['2']['base_stat'];
+    input.value = '';
+    searchPokemon = data.id;
   } else {
     pokemonName.innerHTML = 'Not found';
     pokemonNumber.innerHTML = '';
